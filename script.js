@@ -5,9 +5,9 @@ document.addEventListener(
         const feedbackDiv = document.getElementById("form-feedback");
         form.addEventListener('click', function (event) {
             event.preventDefault();
-            const username = document.getElementById("username");
-            const email = document.getElementById("email");
-            const password = document.getElementById("password");
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
 
             const isValid = true;
             var messages = [];
